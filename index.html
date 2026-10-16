@@ -1,0 +1,161 @@
+<?php
+include 'db_connect.php';
+?>
+<?php
+include 'db_connect.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XenMovie | Stream the Best</title>
+    <meta
+      name="description"
+      content="Premium movie streaming interface inspired by modern entertainment platforms."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap" aria-label="XenMovie home">
+          <div class="brand-mark">X</div>
+          <span>XENMOVIE</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#" class="nav-link active" data-nav="home">Home</a>
+          <a href="#" class="nav-link" data-nav="tv">TV Shows</a>
+          <a href="#" class="nav-link" data-nav="movies">Movies</a>
+          <a href="#" class="nav-link" data-nav="new">New &amp; Popular</a>
+          <a href="#" class="nav-link" data-nav="myList">My List</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">⌕</button>
+          <button class="icon-btn" aria-label="Notifications">🔔</button>
+          <a href="login.html" class="profile-pill" aria-label="Account">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+              alt="User avatar"
+            />
+            <span>Jin</span>
+          </a>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="hero-banner" id="heroBanner">
+          <div class="hero-content reveal">
+            <p class="eyebrow" id="heroEyebrow">Original Series</p>
+            <h1 id="heroTitle">Midnight Echoes</h1>
+            <div class="meta-row">
+              <span id="heroMetaOne">2026</span>
+              <span id="heroMetaTwo">18+</span>
+              <span id="heroMetaThree">8 Episodes</span>
+              <span id="heroMetaFour">4K UHD</span>
+            </div>
+            <p class="hero-description" id="heroDescription">
+              A disgraced detective uncovers a hidden city beneath the rain-soaked streets,
+              where every secret leaves a signal in the dark.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn">▶ Play</button>
+              <button class="secondary-btn">＋ My List</button>
+            </div>
+            <div class="hero-metrics" id="heroMetrics">
+              <div>
+                <strong>8.9</strong>
+                <span>IMDb</span>
+              </div>
+              <div>
+                <strong>₱199</strong>
+                <span>Monthly</span>
+              </div>
+              <div>
+                <strong>4K</strong>
+                <span>Ultra HD</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="genre-strip reveal" id="genreStrip">
+          <button class="genre-pill active">Action</button>
+          <button class="genre-pill">Drama</button>
+          <button class="genre-pill">Thriller</button>
+          <button class="genre-pill">Comedy</button>
+          <button class="genre-pill">Sci‑Fi</button>
+          <button class="genre-pill">Fantasy</button>
+          <button class="genre-pill">Documentary</button>
+        </section>
+
+        <section class="movie-section reveal">
+          <div class="section-heading">
+            <h2 id="rowTitleOne">Trending Now</h2>
+            <a href="#" id="rowLinkOne">See All</a>
+          </div>
+          <div class="media-row" id="rowOne" data-section="trending"></div>
+        </section>
+
+        <section class="movie-section reveal">
+          <div class="section-heading">
+            <h2 id="rowTitleTwo">Top Picks</h2>
+            <a href="#" id="rowLinkTwo">Browse</a>
+          </div>
+          <div class="media-row" id="rowTwo" data-section="topPicks"></div>
+        </section>
+
+        <section class="feature-grid reveal" id="featureGrid">
+          <article class="feature-card feature-card-large">
+            <div class="feature-copy">
+              <span class="feature-tag">New Release</span>
+              <h3>Peak Velocity</h3>
+              <p>High-speed chases, adrenaline-fueled races, and a final climb against time.</p>
+              <div class="feature-meta">
+                <span>★ 8.7</span>
+                <span>₱249</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-small">
+            <div class="feature-copy">
+              <span class="feature-tag">Award Winning</span>
+              <h3>Glass Horizon</h3>
+            </div>
+          </article>
+        </section>
+
+        <section class="movie-section reveal">
+          <div class="section-heading">
+            <h2 id="rowTitleThree">Continue Watching</h2>
+            <a href="#" id="rowLinkThree">Resume</a>
+          </div>
+          <div class="media-row" id="rowThree" data-section="continueWatching"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <span class="brand-mark footer-brand">X</span>
+          <span>XENMOVIE</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Help Center</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<?php
+include 'db_connect.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XenMovie | Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="auth-body alt-auth-body">
+    <div class="auth-shell auth-shell-signup">
+      <main class="auth-panel auth-panel-signup">
+        <div class="auth-card auth-card-signup">
+          <div class="auth-header">
+            <span class="mini-label">Start watching</span>
+            <h2>Create account</h2>
+          </div>
+
+          <form class="auth-form">
+            <label>
+              Full name
+              <input type="text" placeholder="Your full name" />
+            </label>
+            <label>
+              Email address
+              <input type="email" placeholder="name@example.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Create a strong password" />
+            </label>
+
+            <div class="plan-grid">
+              <label class="plan-option selected">
+                <input type="radio" name="plan" checked />
+                <span>
+                  <strong>Basic</strong>
+                  <em>₱149 / month</em>
+                </span>
+              </label>
+              <label class="plan-option">
+                <input type="radio" name="plan" />
+                <span>
+                  <strong>Premium</strong>
+                  <em>₱249 / month</em>
+                </span>
+              </label>
+            </div>
+
+            <label class="checkbox-row checkbox-row-large">
+              <input type="checkbox" checked />
+              <span>I agree to the Terms and Privacy Policy.</span>
+            </label>
+
+            <button type="submit" class="primary-btn auth-btn">Create account</button>
+          </form>
+
+          <p class="switch-copy">
+            Already have an account?
+            <a href="login.html">Sign in</a>
+          </p>
+        </div>
+      </main>
+
+      <aside class="auth-visual auth-visual-signup">
+        <div class="auth-overlay"></div>
+        <div class="auth-visual-content">
+          <div class="brand-wrap">
+            <div class="brand-mark">X</div>
+            <span>XENMOVIE</span>
+          </div>
+          <h1>Join millions of viewers ready for their next obsession.</h1>
+          <ul class="benefit-list">
+            <li>4K streaming with Dolby Atmos</li>
+            <li>Curated recommendations and watches</li>
+            <li>Cancel anytime, no extra fees</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

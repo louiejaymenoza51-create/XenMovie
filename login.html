@@ -1,0 +1,76 @@
+<?php
+include 'db_connect.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XenMovie | Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <aside class="auth-visual">
+        <div class="auth-overlay"></div>
+        <div class="auth-visual-content">
+          <div class="brand-wrap">
+            <div class="brand-mark">X</div>
+            <span>XENMOVIE</span>
+          </div>
+          <h1>Unlimited movies, series, and live premieres.</h1>
+          <p>Stream blockbuster titles in stunning 4K and explore a world of premium entertainment.</p>
+        </div>
+      </aside>
+
+      <main class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-header">
+            <span class="mini-label">Welcome back</span>
+            <h2>Sign in</h2>
+          </div>
+
+          <form class="auth-form">
+            <label>
+              Email address
+              <input type="email" placeholder="name@example.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="Enter your password" />
+            </label>
+
+            <div class="form-row">
+              <label class="checkbox-row">
+                <input type="checkbox" checked />
+                <span>Remember me</span>
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="primary-btn auth-btn">Sign in</button>
+          </form>
+
+          <div class="divider"><span>or continue with</span></div>
+
+          <div class="social-grid">
+            <button type="button">Google</button>
+            <button type="button">Apple</button>
+          </div>
+
+          <p class="switch-copy">
+            New to XenMovie?
+            <a href="signup.html">Create an account</a>
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
